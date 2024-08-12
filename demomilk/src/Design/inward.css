@@ -1,0 +1,204 @@
+/* .milk-form-container {
+  text-align: center;
+  max-width: 900px;
+  height: 450px;
+  margin-top: 70px;
+  margin-left: 25%;
+  background-color: white;
+  border-radius: 15px;
+}
+ .inwar-voucher{
+  margin-top: 9px;
+  padding: 10px;
+} 
+.inwad_Account{
+  margin-right:490px;
+  position: relative;
+  top: -20px;
+  margin-top: 50px;
+ 
+}
+.inwad-voucher{
+  margin-right:490px;
+  position: relative;
+  top: -20px;
+}
+.inwad-AC{
+  margin-left: 50px;
+  position: relative;
+  top: -20px;
+  display: flex;
+}
+.inwad-fat{
+  margin-top: 7px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.inwad-liters{
+  margin-top: 7px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+.upper-container, .Shift-container, .name, .b-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.inwad-save{
+  margin-top: 30px;
+  margin-right: 20px;
+} 
+
+ */
+
+
+
+ .milk-form-container {
+  text-align: center;
+  max-width: 70%; /* Changed to percentage for responsiveness */
+  height: auto; /* Auto height for responsiveness */
+  margin: 70px auto; /* Center horizontally */
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px; /* Added padding for better spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better visual appeal */
+  margin-left: 230px;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 100%;
+  max-width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #f4f4f4;
+  border-right: 5px solid black;
+ 
+
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+/* .dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* Form styling */
+.upper-container,  .inwad-voucher, .inwad-AC, .inwad-save {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 120px;
+  /* flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; */
+}
+.SNo{
+  width: 40%;
+  margin-top: 30px;
+}
+.inwad-voucher{
+  margin-top: 40px;
+}
+.shift{
+  margin-left: 160px;
+  
+}
+.shif{
+  width: 910%;
+}
+.inwad_Account {
+display:flex;
+}
+.inwad-voucher{
+ margin-left: 120px;
+ margin-top: -60px;
+ 
+}
+
+.inwad_Account {
+margin-left: 430px;
+margin-top: 30px;
+}
+
+.inwad-AC {
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.inwad-fat, .inwad-liters {
+  flex: 1;
+  margin-top: 10px;
+ 
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.upper-container > * {
+  margin: 10px;
+}
+.inwad-save{
+  margin-left: 45%;
+  margin-top: 30px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .milk-form-container {
+    margin: 20px;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .inwad-AC {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -10px;
+  }
+
+  .inwad-fat {
+ padding-top: 50px;
+  }
+.inwad-save{
+  margin-left: 80px;
+}
+
+}

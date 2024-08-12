@@ -1,0 +1,93 @@
+/* 
+
+body{
+  background: linear-gradient(to right, #a1def3, #0a293b);
+}
+.AD_Log{
+  text-align: center;
+  max-width: 500px;
+  height: 280px;
+  margin-top: 170px;
+  margin-left: 30%;
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;  
+}
+.AD_Log h1{
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+.AD_Log input{
+  height: 25px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  width: 400px;
+  
+}
+.AD_Log a{
+  margin-left: 130px;
+
+  text-decoration:none ;
+}
+.log-btn{
+  margin-top: 20px;
+  width:200px;
+  height: 25px;
+  margin-left: 50px;
+} 
+
+
+
+ */
+
+
+ body {
+  background: linear-gradient(to right, #a1def3, #0a293b);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.AD_Log {
+  text-align: center;
+  max-width: 500px;
+  width: 90%; /* Make the width responsive */
+  margin: 2rem auto; /* Center the container and add margin */
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;
+  padding: 2rem; /* Add padding for spacing */
+  margin-top: 200px;
+}
+
+.AD_Log h1 {
+  margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+.AD_Log .MuiTextField-root {
+  width: 100%; /* Make TextField take full width */
+  margin-bottom: 1rem; /* Adjust margin for spacing */
+}
+
+.AD_Log a {
+  display: block; /* Make the link block-level for better spacing */
+  margin-top: 0.5rem; /* Adjust margin for spacing */
+  text-decoration: none;
+  color: #007bff; /* Change link color */
+}
+
+.log-btn {
+  margin-top: 1rem; /* Adjust margin for spacing */
+}
+
+@media (max-width: 600px) {
+  .AD_Log {
+    width: 95%; /* Adjust width for small screens */
+    margin-top: 1rem; /* Adjust margin for small screens */
+    padding: 1rem; /* Adjust padding for small screens */
+    margin-top: 200px;
+  }
+
+  .log-btn {
+    width: 100%; /* Make button take full width */
+    margin-left: 0; /* Remove left margin */
+  }
+}

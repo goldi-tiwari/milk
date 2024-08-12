@@ -1,0 +1,169 @@
+/* .user{
+  text-align: center;
+  max-width: 600px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 35%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.user h1{
+  padding-top: 20px;
+  padding-bottom: 2px;
+  margin-left:55px;
+}
+.user input{
+ text-align: center; 
+ margin-left:20px;
+ border-radius: 15px;
+ width: 220px;
+ height: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.sel_op{
+  text-align: center; 
+  margin-left:85px;
+  padding-right: 100px;
+  border-radius: 15px;
+  width: 430px;
+  height: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ */
+
+
+ /* Reset default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #00b7ff, #000000);
+  padding-top: 10px;
+  color: rgb(70, 56, 56);
+  transition: width 0.3s ease;
+}
+
+.sidebar h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.sidebar .dropdown {
+  position: relative;
+}
+
+.sidebar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(to right, #00b7ff, #000000);
+  min-width: 150px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.sidebar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sidebar .dropdown-content li {
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+/* User container */
+.user {
+  text-align: center;
+  max-width: 50%;
+  height: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.user h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.user input {
+  text-align: center;
+  margin: 7px auto;
+  border-radius: 15px;
+  width: 30%;
+  max-width: 400px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sel_op {
+  text-align: center;
+  margin: 20px auto;
+  padding-right: 0;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .user input {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .sel_op {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sidebar .dropdown .dropdown-content {
+    position: static;
+    width: 100%;
+  }
+}
